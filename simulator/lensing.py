@@ -7,6 +7,8 @@ from simulator.profiles import MassProfileSIE, MassProfileNFW, LightProfileSersi
 
 import jax.numpy as jnp
 
+from jaxinterp2d import CartesianGrid
+
 class LensingSim:
     def __init__(self, lenses_list=[{}], sources_list=[{}], global_dict={}, observation_dict={}):
         """
@@ -57,6 +59,8 @@ class LensingSim:
         )
 
         self.x, self.y = self.D_l * self.theta_x * asctorad, self.D_l * self.theta_y * asctorad
+
+        self.x_lims, self.y_lims = self.D_l * asctorad * jnp.array(self.theta_x_lims), self.D_l * asctorad * jnp.array(self.theta_y_lims)
 
         self.pix_area = ((self.theta_x_lims[1] - self.theta_x_lims[0]) / self.n_x) * ((self.theta_y_lims[1] - self.theta_y_lims[0]) / self.n_y)
 
@@ -123,6 +127,9 @@ class LensingSim:
                     * self.D_l ** 2
                     / radtoasc ** 2
                 )
+            elif source_dict["profile"] == "CartesianGrid":
+                src_ary = source_dict["src_ary"]
+                f_lens += CartesianGrid(limits=[self.x_lims, self.y_lims], values=src_ary)(self.x - x_d, self.y - y_d)
             else:
                 raise Exception("Unknown source profile specification!")
 
