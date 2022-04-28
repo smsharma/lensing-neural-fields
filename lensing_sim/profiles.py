@@ -1,4 +1,4 @@
-from simulator.units import *
+from lensing_sim.units import *
 from scipy.special import gamma
 
 # import autograd.numpy as np

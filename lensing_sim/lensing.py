@@ -2,8 +2,8 @@ import matplotlib.pyplot as plt
 from astropy.cosmology import Planck15
 from astropy.convolution import convolve, Gaussian2DKernel
 
-from simulator.units import *
-from simulator.profiles import MassProfileSIE, MassProfileNFW, LightProfileSersic
+from lensing_sim.units import *
+from lensing_sim.profiles import MassProfileSIE, MassProfileNFW, LightProfileSersic
 
 import jax.numpy as jnp
 
