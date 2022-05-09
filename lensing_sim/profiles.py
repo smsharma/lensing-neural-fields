@@ -60,27 +60,26 @@ class MassProfileSIE:
         return 4 * jnp.pi * sigma_v ** 2 * D_ls / D_s * radtoasc
 
 class MassProfileExternalShear:
-    def __init__(self, x_0, y_0, r_E, q):
+    def __init__(self, x_0, y_0, gamma_1, gamma_2):
         """
         Singular isothermal ellipsoid (SIE) mass profile class
 
-        :param x_0: x-coordinate of center of deflector, in same units as r_E
-        :param y_0: y-coordinate of center of deflector, in same units as r_E
-        :param r_E: Einstein radius of deflector
-        :param q: Axis-ratio of deflector
+        :param x_0: x-coordinate of center of deflector
+        :param y_0: y-coordinate of center of deflector
+        :param gamma_1, gamma_2: External shear components
         """
         self.x_0 = x_0
         self.y_0 = y_0
-        self.r_E = r_E
-        self.q = q
+
+        self.gamma_1 = gamma_1
+        self.gamma_2 = gamma_2
 
     def deflection(self, x, y):
         """
-        Calculate deflection vectors, from astro-ph/0102341
-        TODO: deal with origin singularity
+        Calculate deflection vectors
 
-        :param x: x-coordinate at which deflection computed, in same units as r_E
-        :param y: y-coordinate at which deflection computed, in same units as r_E
+        :param x: x-coordinate at which deflection computed
+        :param y: y-coordinate at which deflection computed
         :return: Deflections at positions specified by x, y
         """
         # Go into shifted coordinates
@@ -88,30 +87,11 @@ class MassProfileExternalShear:
         y_p = y - self.y_0
         
         # Compute deflection field
-        psi = jnp.sqrt((self.q * x_p) ** 2 + y_p ** 2)
-
-        x_d = jnp.where(self.q == 1., self.r_E * x_p / psi, self.r_E * self.q / jnp.sqrt(1 - self.q ** 2) * jnp.arctan(jnp.sqrt(1 - self.q ** 2) * x_p / psi))
-        y_d = jnp.where(self.q == 1., self.r_E * y_p / psi, self.r_E * self.q / jnp.sqrt(1 - self.q ** 2) * jnp.arctanh(jnp.sqrt(1 - self.q ** 2) * y_p / psi))
-
-        # if self.q == 1.:
-        #     x_d = self.r_E * x_p / psi
-        #     y_d = self.r_E * y_p / psi
-        # else:
-        #     x_d = self.r_E * self.q / jnp.sqrt(1 - self.q ** 2) * jnp.arctan(jnp.sqrt(1 - self.q ** 2) * x_p / psi)
-        #     y_d = self.r_E * self.q / jnp.sqrt(1 - self.q ** 2) * jnp.arctanh(jnp.sqrt(1 - self.q ** 2) * y_p / psi)
+        x_d = self.gamma_1 * x_p  + self.gamma_2 * y_p
+        y_d = self.gamma_2 * x_p  - self.gamma_1 * y_p
 
         # Return deflection field
         return x_d, y_d
-
-    @classmethod
-    def theta_E(self, sigma_v, D_ls, D_s):
-        """ Einstein radius (in arcsecs) for a SIS halo
-            :param sigma_v: Central velocity dispersion of SIE halo
-            :param D_ls: Angular distance between lens and source, in natural units
-            :param D_s: Angular distance between observer and source, in natural units
-            :return: Einstein radius of lens, in arcsecs
-        """
-        return 4 * jnp.pi * sigma_v ** 2 * D_ls / D_s * radtoasc
 
 class MassProfileNFW:
     def __init__(self, x_0, y_0, M_200, kappa_s, r_s):

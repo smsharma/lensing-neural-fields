@@ -3,7 +3,7 @@ from astropy.cosmology import Planck15
 from astropy.convolution import convolve, Gaussian2DKernel
 
 from lensing_sim.units import *
-from lensing_sim.profiles import MassProfileSIE, MassProfileNFW, LightProfileSersic
+from lensing_sim.profiles import MassProfileExternalShear, MassProfileSIE, MassProfileNFW, LightProfileSersic
 
 import jax.numpy as jnp
 
@@ -93,6 +93,13 @@ class LensingSim:
                     M_200=lens_dict["M_200"],
                     kappa_s=(lens_dict["rho_s"]) * (lens_dict["r_s"])  / self.Sigma_crit / Mpc ,
                     r_s=lens_dict["r_s"],
+                ).deflection(self.x, self.y)
+            elif lens_dict["profile"] == "ExtShear":
+                _x_d, _y_d = MassProfileExternalShear(
+                    x_0=lens_dict["theta_x_0"] * self.D_l * asctorad,
+                    y_0=lens_dict["theta_y_0"] * self.D_l * asctorad,
+                    gamma_1=lens_dict["gamma_1"],
+                    gamma_2=lens_dict["gamma_2"],
                 ).deflection(self.x, self.y)
             else:
                 raise Exception("Unknown lens profile specification!")
