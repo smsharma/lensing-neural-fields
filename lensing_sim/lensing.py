@@ -9,6 +9,7 @@ import jax.numpy as jnp
 
 from jaxinterp2d import CartesianGrid
 
+
 class LensingSim:
     def __init__(self, lenses_list=[{}], sources_list=[{}], global_dict={}, observation_dict={}):
         """
@@ -30,8 +31,8 @@ class LensingSim:
         self.z_s = self.global_dict["z_s"]
         self.z_l = self.global_dict["z_l"]
 
-        self.D_s = Planck15.angular_diameter_distance(z=self.z_s).value #* Mpc
-        self.D_l = Planck15.angular_diameter_distance(z=self.z_l).value #* Mpc
+        self.D_s = Planck15.angular_diameter_distance(z=self.z_s).value  # * Mpc
+        self.D_l = Planck15.angular_diameter_distance(z=self.z_l).value  # * Mpc
 
         self.Sigma_crit = 1.0 / (4 * jnp.pi * GN) * self.D_s / ((self.D_s - self.D_l) * self.D_l) / M_s
 
@@ -55,14 +56,17 @@ class LensingSim:
         # x/y-coordinates of grid and pixel area in arcsec**2
 
         self.theta_x, self.theta_y = jnp.meshgrid(
-            jnp.linspace(self.theta_x_lims[0], self.theta_x_lims[1], self.n_x), jnp.linspace(self.theta_y_lims[0], self.theta_y_lims[1], self.n_y)
+            jnp.linspace(self.theta_x_lims[0], self.theta_x_lims[1], self.n_x),
+            jnp.linspace(self.theta_y_lims[0], self.theta_y_lims[1], self.n_y)
         )
 
         self.x, self.y = self.D_l * self.theta_x * asctorad, self.D_l * self.theta_y * asctorad
 
-        self.x_lims, self.y_lims = self.D_l * asctorad * jnp.array(self.theta_x_lims), self.D_l * asctorad * jnp.array(self.theta_y_lims)
+        self.x_lims, self.y_lims = self.D_l * asctorad * jnp.array(self.theta_x_lims), self.D_l * asctorad * jnp.array(
+            self.theta_y_lims)
 
-        self.pix_area = ((self.theta_x_lims[1] - self.theta_x_lims[0]) / self.n_x) * ((self.theta_y_lims[1] - self.theta_y_lims[0]) / self.n_y)
+        self.pix_area = ((self.theta_x_lims[1] - self.theta_x_lims[0]) / self.n_x) * (
+                    (self.theta_y_lims[1] - self.theta_y_lims[0]) / self.n_y)
 
     def lensed_image(self, return_deflection_maps=False):
         """ Get strongly lensed image
@@ -91,7 +95,7 @@ class LensingSim:
                     x_0=lens_dict["theta_x_0"] * self.D_l * asctorad,
                     y_0=lens_dict["theta_y_0"] * self.D_l * asctorad,
                     M_200=lens_dict["M_200"],
-                    kappa_s=(lens_dict["rho_s"]) * (lens_dict["r_s"])  / self.Sigma_crit / Mpc ,
+                    kappa_s=(lens_dict["rho_s"]) * (lens_dict["r_s"]) / self.Sigma_crit / Mpc,
                     r_s=lens_dict["r_s"],
                 ).deflection(self.x, self.y)
             elif lens_dict["profile"] == "ExtShear":
@@ -103,7 +107,7 @@ class LensingSim:
                 ).deflection(self.x, self.y)
             else:
                 raise Exception("Unknown lens profile specification!")
-            
+
             x_d += _x_d
             y_d += _y_d
             if return_deflection_maps and lens_dict["profile"] == "SIE":
@@ -114,7 +118,8 @@ class LensingSim:
                 y_d_sub += _y_d
 
         if return_deflection_maps:
-            return (x_d, y_d), (x_d_host, y_d_host), (x_d_sub, y_d_sub), (self.x.flatten()**2 + self.y.flatten()**2)**2
+            return (x_d, y_d), (x_d_host, y_d_host), (x_d_sub, y_d_sub), (
+                        self.x.flatten() ** 2 + self.y.flatten() ** 2) ** 2
 
         # Evaluate source image on deflected lens plane to get lensed image
 
@@ -124,15 +129,15 @@ class LensingSim:
             if source_dict["profile"] == "Sersic":
 
                 f_lens += (
-                    LightProfileSersic(
-                        x_0=source_dict["theta_x_0"] * self.D_l * asctorad,
-                        y_0=source_dict["theta_y_0"] * self.D_l * asctorad,
-                        S_tot=source_dict["S_tot"],
-                        r_e=source_dict["theta_e"] * self.D_l * asctorad,
-                        n_srsc=source_dict["n_srsc"],
-                    ).flux(self.x - x_d, self.y - y_d)
-                    * self.D_l ** 2
-                    / radtoasc ** 2
+                        LightProfileSersic(
+                            x_0=source_dict["theta_x_0"] * self.D_l * asctorad,
+                            y_0=source_dict["theta_y_0"] * self.D_l * asctorad,
+                            S_tot=source_dict["S_tot"],
+                            r_e=source_dict["theta_e"] * self.D_l * asctorad,
+                            n_srsc=source_dict["n_srsc"],
+                        ).flux(self.x - x_d, self.y - y_d)
+                        * self.D_l ** 2
+                        / radtoasc ** 2
                 )
             elif source_dict["profile"] == "CartesianGrid":
                 src_ary = source_dict["src_ary"]
