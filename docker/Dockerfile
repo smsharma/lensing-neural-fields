@@ -31,3 +31,18 @@ RUN pip install jaynes==0.8.11 ml_logger==v0.8.69 waterbear params-proto==2.9.6 
 RUN pip install google-cloud-storage
 RUN pip install networkx
 RUN pip install --upgrade gym==0.21.0
+
+RUN yes | pip install flax
+RUN yes | pip install --upgrade "jax[cuda]" -f https://storage.googleapis.com/jax-releases/jax_releases.html
+RUN python -m pip install git+https://github.com/adam-coogan/jaxinterp2d.git@master
+RUN yes | pip install optax
+RUN yes | pip install tensorflow_probability
+RUN yes | pip install lenstronomy
+RUN yes | conda install numba
+RUN yes | pip install lenstronomy
+RUN yes | conda install grpcio
+RUN yes | pip install objax
+RUN yes | cd lensing-minimal
+RUN yes | conda install flax
+RUN yes | pip install distrax
+RUN yes | pip install numpyro
