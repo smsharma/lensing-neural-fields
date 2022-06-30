@@ -1,0 +1,58 @@
+This is BibTeX, Version 0.99d (TeX Live 2019)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: lensing-neural-fields.aux
+The style file: icml2022.bst
+Database file #1: lensing-neural-fields.bib
+Warning--entry type for "deepmind2020jax" isn't style-file defined
+--line 54 of file lensing-neural-fields.bib
+Warning--entry type for "optax2020github" isn't style-file defined
+--line 216 of file lensing-neural-fields.bib
+Warning--entry type for "jaxinterp2dgithub" isn't style-file defined
+--line 225 of file lensing-neural-fields.bib
+Warning--entry type for "flax2020github" isn't style-file defined
+--line 231 of file lensing-neural-fields.bib
+Warning--entry type for "jax2018github" isn't style-file defined
+--line 262 of file lensing-neural-fields.bib
+Warning--empty year in jaxinterp2dgithub
+You've used 61 entries,
+            2773 wiz_defined-function locations,
+            941 strings with 18280 characters,
+and the built_in function-call counts, 35743 in all, are:
+= -- 2951
+> -- 3058
+< -- 24
++ -- 1027
+- -- 966
+* -- 3247
+:= -- 5721
+add.period$ -- 197
+call.type$ -- 61
+change.case$ -- 495
+chr.to.int$ -- 61
+cite$ -- 123
+duplicate$ -- 1293
+empty$ -- 2293
+format.name$ -- 1049
+if$ -- 7254
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 57
+newline$ -- 323
+num.names$ -- 244
+pop$ -- 951
+preamble$ -- 1
+purify$ -- 435
+quote$ -- 0
+skip$ -- 1148
+stack$ -- 0
+substring$ -- 916
+swap$ -- 122
+text.length$ -- 5
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 666
+warning$ -- 1
+while$ -- 249
+width$ -- 0
+write$ -- 803
+(There were 6 warnings)
