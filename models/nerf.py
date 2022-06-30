@@ -34,7 +34,7 @@ class NeRFModel(nn.Module):
             x = self.positional_encoding(input_points, self.positional_encoding_dims)
         elif self.add_random_fourier:
             x = nn.Dense(self.dense_layer_width, dtype=self.dtype, kernel_init=nn.initializers.normal(stddev=self.bandwidth_rff / 2.0), bias_init=nn.initializers.uniform(scale=1))(input_points)
-            x = jnp.sin(2 * np.pi * x)
+            x = jnp.sin(2 * x)
         else:
             x = input_points
 
