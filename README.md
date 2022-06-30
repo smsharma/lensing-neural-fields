@@ -13,7 +13,7 @@ From the nature of dark matter to the rate of expansion of our Universe, observa
 
 ## Code
 
-Results from the paper can be reproced by running the notebook [notebooks/lens-fit.ipynb](notebooks/lens-fit.ipynb).
+Code requirements are given in [environment.yml](environment.yml). The code additionally relies in [`jaxinterp2d`](https://github.com/adam-coogan/jaxinterp2d). Results from the paper can be reproduced by running the notebook [notebooks/lens-fit.ipynb](notebooks/lens-fit.ipynb).
 
 ## Citation
 
@@ -29,4 +29,4 @@ Results from the paper can be reproced by running the notebook [notebooks/lens-f
 }
 ```
 
-The repository contains a modified version of the [gigalens](https://github.com/giga-lens/gigalens) code.
+The repository contains a modified version of the [`gigalens`](https://github.com/giga-lens/gigalens) package.
