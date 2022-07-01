@@ -3,7 +3,7 @@
 [Siddharth Mishra-Sharma](smsharma@mit.edu) and [Ge Yang](geyang@csail.mit.edu)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
-[![arXiv](https://img.shields.io/badge/arXiv-2206.xxxxx%20-green.svg)](https://arxiv.org/abs/2206.14820)
+[![arXiv](https://img.shields.io/badge/arXiv-2206.14820%20-green.svg)](https://arxiv.org/abs/2206.14820)
 
 ![Summary of model.](paper/arXiv-v1/figures/hig.png)
 
