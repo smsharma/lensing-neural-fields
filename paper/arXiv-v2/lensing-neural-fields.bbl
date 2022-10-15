@@ -1,0 +1,492 @@
+\begin{thebibliography}{66}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Arpit et~al.(2017)Arpit, Jastrzebski, Ballas, Krueger, Bengio, Kanwal,
+  Maharaj, Fischer, Courville, Bengio, et~al.]{arpit2017closer}
+Arpit, D., Jastrzebski, S., Ballas, N., Krueger, D., Bengio, E., Kanwal, M.~S.,
+  Maharaj, T., Fischer, A., Courville, A., Bengio, Y., et~al.
+\newblock A closer look at memorization in deep networks.
+\newblock In \emph{International conference on machine learning}, pp.\
+  233--242. PMLR, 2017.
+
+\bibitem[{Astropy Collaboration}(2013)]{astropy:2013}
+{Astropy Collaboration}.
+\newblock {Astropy: A community Python package for astronomy}.
+\newblock \emph{Astronomy \& Astrophysics}, 558:\penalty0 A33, October 2013.
+\newblock \doi{10.1051/0004-6361/201322068}.
+
+\bibitem[{Astropy Collaboration}(2018)]{astropy:2018}
+{Astropy Collaboration}.
+\newblock {The Astropy Project: Building an Open-science Project and Status of
+  the v2.0 Core Package}.
+\newblock \emph{The Astronomical Journal}, 156\penalty0 (3):\penalty0 123,
+  September 2018.
+\newblock \doi{10.3847/1538-3881/aabc4f}.
+
+\bibitem[{Astropy Collaboration}(2022)]{astropy:2022}
+{Astropy Collaboration}.
+\newblock {The Astropy Project: Sustaining and Growing a Community-oriented
+  Open-source Project and the Latest Major Release (v5.0) of the Core Package}.
+\newblock \emph{The Astrophysical Journal}, 935\penalty0 (2):\penalty0 167,
+  August 2022.
+\newblock \doi{10.3847/1538-4357/ac7c74}.
+
+\bibitem[Babuschkin et~al.(2020)Babuschkin, Baumli, Bell, Bhupatiraju, Bruce,
+  Buchlovsky, Budden, Cai, Clark, Danihelka, Fantacci, Godwin, Jones, Hennigan,
+  Hessel, Kapturowski, Keck, Kemaev, King, Martens, Mikulik, Norman, Quan,
+  Papamakarios, Ring, Ruiz, Sanchez, Schneider, Sezener, Spencer, Srinivasan,
+  Stokowiec, and Viola]{deepmind2020jax}
+Babuschkin, I., Baumli, K., Bell, A., Bhupatiraju, S., Bruce, J., Buchlovsky,
+  P., Budden, D., Cai, T., Clark, A., Danihelka, I., Fantacci, C., Godwin, J.,
+  Jones, C., Hennigan, T., Hessel, M., Kapturowski, S., Keck, T., Kemaev, I.,
+  King, M., Martens, L., Mikulik, V., Norman, T., Quan, J., Papamakarios, G.,
+  Ring, R., Ruiz, F., Sanchez, A., Schneider, R., Sezener, E., Spencer, S.,
+  Srinivasan, S., Stokowiec, W., and Viola, F.
+\newblock The {D}eep{M}ind {JAX} {E}cosystem, 2020.
+\newblock URL \url{http://github.com/deepmind}.
+
+\bibitem[Biggio et~al.(2021)Biggio, Galan, Peel, Vernardos, and
+  Courbin]{biggio2021ml4ps}
+Biggio, L., Galan, A., Peel, A., Vernardos, G., and Courbin, F.
+\newblock {Differentiable Strong Lensing for Complex Lens Modelling}.
+\newblock In \emph{{Machine Learning and the Physical Sciences Workshop at the
+  35th Conference on Neural Information Processing Systems (NeurIPS)}}, 2021.
+
+\bibitem[Birrer \& Amara(2018)Birrer and Amara]{birrer2018lenstronomy}
+Birrer, S. and Amara, A.
+\newblock lenstronomy: Multi-purpose gravitational lens modelling software
+  package.
+\newblock \emph{Physics of the Dark Universe}, 22:\penalty0 189--201, 2018.
+
+\bibitem[Birrer et~al.(2015)Birrer, Amara, and
+  Refregier]{birrer2015gravitational}
+Birrer, S., Amara, A., and Refregier, A.
+\newblock Gravitational lens modeling with basis sets.
+\newblock \emph{The Astrophysical Journal}, 813\penalty0 (2):\penalty0 102,
+  2015.
+
+\bibitem[Birrer et~al.(2020)Birrer, Shajib, Galan, Millon, Treu, Agnello,
+  Auger, Chen, Christensen, Collett, et~al.]{birrer2020tdcosmo}
+Birrer, S., Shajib, A., Galan, A., Millon, M., Treu, T., Agnello, A., Auger,
+  M., Chen, G.-F., Christensen, L., Collett, T., et~al.
+\newblock Tdcosmo-iv. hierarchical time-delay cosmography--joint inference of
+  the hubble constant and galaxy density profiles.
+\newblock \emph{Astronomy \& Astrophysics}, 643:\penalty0 A165, 2020.
+
+\bibitem[Birrer et~al.(2021)Birrer, Shajib, Gilman, Galan, Aalbers, Millon,
+  Morgan, Pagano, Park, Teodori, Tessore, Ueland, de~Vyvere, Wagner-Carena,
+  Wempe, Yang, Ding, Schmidt, Sluse, Zhang, and Amara]{Birrer2021}
+Birrer, S., Shajib, A.~J., Gilman, D., Galan, A., Aalbers, J., Millon, M.,
+  Morgan, R., Pagano, G., Park, J.~W., Teodori, L., Tessore, N., Ueland, M.,
+  de~Vyvere, L.~V., Wagner-Carena, S., Wempe, E., Yang, L., Ding, X., Schmidt,
+  T., Sluse, D., Zhang, M., and Amara, A.
+\newblock lenstronomy ii: A gravitational lensing software ecosystem.
+\newblock \emph{Journal of Open Source Software}, 6\penalty0 (62):\penalty0
+  3283, 2021.
+\newblock \doi{10.21105/joss.03283}.
+\newblock URL \url{https://doi.org/10.21105/joss.03283}.
+
+\bibitem[Blei et~al.(2017)Blei, Kucukelbir, and McAuliffe]{blei2017variational}
+Blei, D.~M., Kucukelbir, A., and McAuliffe, J.~D.
+\newblock Variational inference: A review for statisticians.
+\newblock \emph{Journal of the American statistical Association}, 112\penalty0
+  (518):\penalty0 859--877, 2017.
+
+\bibitem[Bradbury et~al.(2018)Bradbury, Frostig, Hawkins, Johnson, Leary,
+  Maclaurin, Necula, Paszke, Vander{P}las, Wanderman-{M}ilne, and
+  Zhang]{jax2018github}
+Bradbury, J., Frostig, R., Hawkins, P., Johnson, M.~J., Leary, C., Maclaurin,
+  D., Necula, G., Paszke, A., Vander{P}las, J., Wanderman-{M}ilne, S., and
+  Zhang, Q.
+\newblock {JAX}: composable transformations of {P}ython+{N}um{P}y programs,
+  2018.
+\newblock URL \url{http://github.com/google/jax}.
+
+\bibitem[Cao et~al.(2019)Cao, Fang, Wu, Zhou, and Gu]{cao2019towards}
+Cao, Y., Fang, Z., Wu, Y., Zhou, D.-X., and Gu, Q.
+\newblock Towards understanding the spectral bias of deep learning.
+\newblock \emph{arXiv preprint arXiv:1912.01198}, 2019.
+
+\bibitem[Chianese et~al.(2020)Chianese, Coogan, Hofma, Otten, and
+  Weniger]{chianese2020differentiable}
+Chianese, M., Coogan, A., Hofma, P., Otten, S., and Weniger, C.
+\newblock Differentiable strong lensing: uniting gravity and neural nets
+  through differentiable probabilistic programming.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  496\penalty0 (1):\penalty0 381--393, 2020.
+
+\bibitem[Collett(2015)]{collett2015population}
+Collett, T.~E.
+\newblock The population of galaxy--galaxy strong lenses in forthcoming optical
+  imaging surveys.
+\newblock \emph{The Astrophysical Journal}, 811\penalty0 (1):\penalty0 20,
+  2015.
+
+\bibitem[Coogan()]{jaxinterp2dgithub}
+Coogan, A.
+\newblock jaxinterp2d: bilinear interpolation on grids with jax.
+\newblock URL \url{http://github.com/adam-coogan/jaxinterp2d}.
+
+\bibitem[Dalal \& Kochanek(2002)Dalal and Kochanek]{dalal2002direct}
+Dalal, N. and Kochanek, C.
+\newblock Direct detection of cold dark matter substructure.
+\newblock \emph{The Astrophysical Journal}, 572\penalty0 (1):\penalty0 25,
+  2002.
+
+\bibitem[Devlin et~al.(2018)Devlin, Chang, Lee, and Toutanova]{devlin2018bert}
+Devlin, J., Chang, M.-W., Lee, K., and Toutanova, K.
+\newblock Bert: Pre-training of deep bidirectional transformers for language
+  understanding.
+\newblock \emph{arXiv preprint arXiv:1810.04805}, 2018.
+
+\bibitem[Einstein(1936)]{Einstein1936LENS}
+Einstein, A.~B.
+\newblock Lens-like action of a star by the deviation of light in the
+  gravitational field.
+\newblock \emph{Science}, 84 2188:\penalty0 506--7, 1936.
+
+\bibitem[Galan et~al.(2021)Galan, Peel, Joseph, Courbin, and
+  Starck]{galan2021slitronomy}
+Galan, A., Peel, A., Joseph, R., Courbin, F., and Starck, J.-L.
+\newblock Slitronomy: Towards a fully wavelet-based strong lensing inversion
+  technique.
+\newblock \emph{Astronomy \& Astrophysics}, 647:\penalty0 A176, 2021.
+
+\bibitem[Gehring et~al.(2017)Gehring, Auli, Grangier, Yarats, and
+  Dauphin]{gehring2017convolutional}
+Gehring, J., Auli, M., Grangier, D., Yarats, D., and Dauphin, Y.~N.
+\newblock Convolutional sequence to sequence learning.
+\newblock In \emph{International conference on machine learning}, pp.\
+  1243--1252. PMLR, 2017.
+
+\bibitem[Gilman et~al.(2019)Gilman, Birrer, Nierenberg, Treu, Du, and
+  Benson]{gilman2019warm}
+Gilman, D., Birrer, S., Nierenberg, A., Treu, T., Du, X., and Benson, A.
+\newblock Warm dark matter chills out: constraints on the halo mass function
+  and the free-streaming length of dark matter with 8 quadruple-image strong
+  gravitational lenses.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society}, 2019.
+
+\bibitem[Gu et~al.(2022)Gu, Huang, Sheu, Aldering, Bolton, Boone, Dey, Filipp,
+  Jullo, Perlmutter, et~al.]{gu2022giga}
+Gu, A., Huang, X., Sheu, W., Aldering, G., Bolton, A., Boone, K., Dey, A.,
+  Filipp, A., Jullo, E., Perlmutter, S., et~al.
+\newblock Giga-lens: Fast bayesian inference for strong gravitational lens
+  modeling.
+\newblock \emph{arXiv preprint arXiv:2202.07663}, 2022.
+
+\bibitem[Harris et~al.(2020)Harris, Millman, Van Der~Walt, Gommers, Virtanen,
+  Cournapeau, Wieser, Taylor, Berg, Smith, et~al.]{harris2020array}
+Harris, C.~R., Millman, K.~J., Van Der~Walt, S.~J., Gommers, R., Virtanen, P.,
+  Cournapeau, D., Wieser, E., Taylor, J., Berg, S., Smith, N.~J., et~al.
+\newblock Array programming with numpy.
+\newblock \emph{Nature}, 585\penalty0 (7825):\penalty0 357--362, 2020.
+
+\bibitem[Heek et~al.(2020)Heek, Levskaya, Oliver, Ritter, Rondepierre, Steiner,
+  and van {Z}ee]{flax2020github}
+Heek, J., Levskaya, A., Oliver, A., Ritter, M., Rondepierre, B., Steiner, A.,
+  and van {Z}ee, M.
+\newblock {F}lax: A neural network library and ecosystem for {JAX}, 2020.
+\newblock URL \url{http://github.com/google/flax}.
+
+\bibitem[Hessel et~al.(2020)Hessel, Budden, Viola, Rosca, Sezener, and
+  Hennigan]{optax2020github}
+Hessel, M., Budden, D., Viola, F., Rosca, M., Sezener, E., and Hennigan, T.
+\newblock Optax: composable gradient transformation and optimisation, in jax!,
+  2020.
+\newblock URL \url{http://github.com/deepmind/optax}.
+
+\bibitem[Hezaveh et~al.(2016)Hezaveh, Dalal, Marrone, Mao, Morningstar, Wen,
+  Blandford, Carlstrom, Fassnacht, Holder, et~al.]{hezaveh2016detection}
+Hezaveh, Y.~D., Dalal, N., Marrone, D.~P., Mao, Y.-Y., Morningstar, W., Wen,
+  D., Blandford, R.~D., Carlstrom, J.~E., Fassnacht, C.~D., Holder, G.~P.,
+  et~al.
+\newblock Detection of lensing substructure using alma observations of the
+  dusty galaxy sdp. 81.
+\newblock \emph{The Astrophysical Journal}, 823\penalty0 (1):\penalty0 37,
+  2016.
+
+\bibitem[Hornik et~al.(1989)Hornik, Stinchcombe, and
+  White]{hornik1989multilayer}
+Hornik, K., Stinchcombe, M., and White, H.
+\newblock Multilayer feedforward networks are universal approximators.
+\newblock \emph{Neural networks}, 2\penalty0 (5):\penalty0 359--366, 1989.
+
+\bibitem[Hsueh et~al.(2020)Hsueh, Enzi, Vegetti, Auger, Fassnacht, Despali,
+  Koopmans, and McKean]{hsueh2020sharp}
+Hsueh, J.-W., Enzi, W., Vegetti, S., Auger, M., Fassnacht, C.~D., Despali, G.,
+  Koopmans, L.~V., and McKean, J.~P.
+\newblock Sharp--vii. new constraints on the dark matter free-streaming
+  properties and substructure abundance from gravitationally lensed quasars.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  492\penalty0 (2):\penalty0 3047--3059, 2020.
+
+\bibitem[Hunter(2007)]{Hunter:2007}
+Hunter, J.~D.
+\newblock {Matplotlib: A 2D graphics environment}.
+\newblock \emph{Computing In Science \& Engineering}, 9\penalty0 (3):\penalty0
+  90--95, 2007.
+
+\bibitem[Jacot et~al.(2018)Jacot, Gabriel, and Hongler]{jacot2018neural}
+Jacot, A., Gabriel, F., and Hongler, C.
+\newblock Neural tangent kernel: Convergence and generalization in neural
+  networks.
+\newblock \emph{Advances in neural information processing systems}, 31, 2018.
+
+\bibitem[Jordan et~al.(1999)Jordan, Ghahramani, Jaakkola, and
+  Saul]{jordan1999introduction}
+Jordan, M.~I., Ghahramani, Z., Jaakkola, T.~S., and Saul, L.~K.
+\newblock An introduction to variational methods for graphical models.
+\newblock \emph{Machine learning}, 37\penalty0 (2):\penalty0 183--233, 1999.
+
+\bibitem[Karchev et~al.(2022)Karchev, Coogan, and Weniger]{karchev2022strong}
+Karchev, K., Coogan, A., and Weniger, C.
+\newblock Strong-lensing source reconstruction with variationally optimized
+  gaussian processes.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  512\penalty0 (1):\penalty0 661--685, 2022.
+
+\bibitem[Keeton(2001)]{keeton2001catalog}
+Keeton, C.~R.
+\newblock A catalog of mass models for gravitational lensing.
+\newblock \emph{arXiv preprint astro-ph/0102341}, 2001.
+
+\bibitem[Kingma \& Ba(2014)Kingma and Ba]{kingma2014adam}
+Kingma, D.~P. and Ba, J.
+\newblock Adam: A method for stochastic optimization.
+\newblock \emph{arXiv preprint arXiv:1412.6980}, 2014.
+
+\bibitem[Kingma \& Welling(2013)Kingma and Welling]{kingma2013auto}
+Kingma, D.~P. and Welling, M.
+\newblock Auto-encoding variational bayes.
+\newblock \emph{arXiv preprint arXiv:1312.6114}, 2013.
+
+\bibitem[Kluyver et~al.(2016)]{Kluyver2016JupyterN}
+Kluyver, T. et~al.
+\newblock Jupyter notebooks - a publishing format for reproducible
+  computational workflows.
+\newblock In \emph{ELPUB}, 2016.
+
+\bibitem[{Kormann} et~al.(1994){Kormann}, {Schneider}, and
+  {Bartelmann}]{1994A&A...284..285K}
+{Kormann}, R., {Schneider}, P., and {Bartelmann}, M.
+\newblock {Isothermal elliptical gravitational lens models.}
+\newblock \emph{Astronomy \& Astrophysics}, 284:\penalty0 285--299, April 1994.
+
+\bibitem[Levis et~al.(2022)Levis, Srinivasan, Chael, Ng, and
+  Bouman]{levis2022gravitationally}
+Levis, A., Srinivasan, P.~P., Chael, A.~A., Ng, R., and Bouman, K.~L.
+\newblock Gravitationally lensed black hole emission tomography.
+\newblock \emph{arXiv preprint arXiv:2204.03715}, 2022.
+
+\bibitem[Loshchilov \& Hutter(2017)Loshchilov and
+  Hutter]{loshchilov2017decoupled}
+Loshchilov, I. and Hutter, F.
+\newblock Decoupled weight decay regularization.
+\newblock \emph{arXiv preprint arXiv:1711.05101}, 2017.
+
+\bibitem[Meneghetti et~al.(2020)Meneghetti, Davoli, Bergamini, Rosati,
+  Natarajan, Giocoli, Caminha, Metcalf, Rasia, Borgani,
+  et~al.]{meneghetti2020excess}
+Meneghetti, M., Davoli, G., Bergamini, P., Rosati, P., Natarajan, P., Giocoli,
+  C., Caminha, G.~B., Metcalf, R.~B., Rasia, E., Borgani, S., et~al.
+\newblock An excess of small-scale gravitational lenses observed in galaxy
+  clusters.
+\newblock \emph{Science}, 369\penalty0 (6509):\penalty0 1347--1351, 2020.
+
+\bibitem[Mildenhall et~al.(2020)Mildenhall, Srinivasan, Tancik, Barron,
+  Ramamoorthi, and Ng]{mildenhall2020nerf}
+Mildenhall, B., Srinivasan, P.~P., Tancik, M., Barron, J.~T., Ramamoorthi, R.,
+  and Ng, R.
+\newblock Nerf: Representing scenes as neural radiance fields for view
+  synthesis.
+\newblock In \emph{European conference on computer vision}, pp.\  405--421.
+  Springer, 2020.
+
+\bibitem[Morningstar et~al.(2019)Morningstar, Levasseur, Hezaveh, Blandford,
+  Marshall, Putzky, Rueter, Wechsler, and Welling]{morningstar2019data}
+Morningstar, W.~R., Levasseur, L.~P., Hezaveh, Y.~D., Blandford, R., Marshall,
+  P., Putzky, P., Rueter, T.~D., Wechsler, R., and Welling, M.
+\newblock Data-driven reconstruction of gravitationally lensed galaxies using
+  recurrent inference machines.
+\newblock \emph{The Astrophysical Journal}, 883\penalty0 (1):\penalty0 14,
+  2019.
+
+\bibitem[Nightingale et~al.(2018)Nightingale, Dye, and
+  Massey]{nightingale2018autolens}
+Nightingale, J., Dye, S., and Massey, R.~J.
+\newblock Autolens: automated modeling of a strong lens's light, mass, and
+  source.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  478\penalty0 (4):\penalty0 4738--4784, 2018.
+
+\bibitem[P\'erez \& Granger(2007)P\'erez and Granger]{PER-GRA:2007}
+P\'erez, F. and Granger, B.~E.
+\newblock {IP}ython: a system for interactive scientific computing.
+\newblock \emph{Computing in Science and Engineering}, 9\penalty0 (3):\penalty0
+  21--29, May 2007.
+\newblock ISSN 1521-9615.
+\newblock \doi{10.1109/MCSE.2007.53}.
+\newblock URL \url{http://ipython.org}.
+
+\bibitem[Phan et~al.(2019)Phan, Pradhan, and Jankowiak]{phan2019composable}
+Phan, D., Pradhan, N., and Jankowiak, M.
+\newblock Composable effects for flexible and accelerated probabilistic
+  programming in numpyro.
+\newblock \emph{arXiv preprint arXiv:1912.11554}, 2019.
+
+\bibitem[Rahaman et~al.(2019)Rahaman, Baratin, Arpit, Draxler, Lin, Hamprecht,
+  Bengio, and Courville]{rahaman2019spectral}
+Rahaman, N., Baratin, A., Arpit, D., Draxler, F., Lin, M., Hamprecht, F.,
+  Bengio, Y., and Courville, A.
+\newblock On the spectral bias of neural networks.
+\newblock In \emph{International Conference on Machine Learning}, pp.\
+  5301--5310. PMLR, 2019.
+
+\bibitem[Rahimi \& Recht(2007)Rahimi and Recht]{rahimi2007random}
+Rahimi, A. and Recht, B.
+\newblock Random features for large-scale kernel machines.
+\newblock \emph{Advances in neural information processing systems}, 20, 2007.
+
+\bibitem[Rahimi \& Recht(2008)Rahimi and Recht]{Rahimi2008kitchen}
+Rahimi, A. and Recht, B.
+\newblock Weighted sums of random kitchen sinks: Replacing minimization with
+  randomization in learning.
+\newblock \emph{Adv. Neural Inf. Process. Syst.}, 21, 2008.
+\newblock ISSN 1049-5258.
+\newblock URL
+  \url{https://proceedings.neurips.cc/paper/2008/hash/0efe32849d230d7f53049ddc4a4b0c60-Abstract.html}.
+
+\bibitem[Roberts et~al.(2022)Roberts, Yaida, and
+  Hanin]{roberts2022deep-learning}
+Roberts, D.~A., Yaida, S., and Hanin, B.
+\newblock \emph{The Principles of Deep Learning Theory}.
+\newblock Cambridge University Press, 2022.
+\newblock \url{https://deeplearningtheory.com}.
+
+\bibitem[{\c{S}}eng{\"u}l et~al.(2021){\c{S}}eng{\"u}l, Dvorkin, Ostdiek, and
+  Tsang]{csengul2021substructure}
+{\c{S}}eng{\"u}l, A.~{\c{C}}., Dvorkin, C., Ostdiek, B., and Tsang, A.
+\newblock Substructure detection reanalyzed: Dark perturber shown to be a
+  line-of-sight halo.
+\newblock \emph{arXiv preprint arXiv:2112.00749}, 2021.
+
+\bibitem[S{\'e}rsic(1963)]{sersic1963influence}
+S{\'e}rsic, J.
+\newblock Influence of the atmospheric and instrumental dispersion on the
+  brightness distribution in a galaxy.
+\newblock \emph{Boletin de la Asociacion Argentina de Astronomia La Plata
+  Argentina}, 6:\penalty0 41--43, 1963.
+
+\bibitem[Simon et~al.(2019)Simon, Birrer, Bechtol, Chakrabarti, Cyr-Racine,
+  Dell'Antonio, Drlica-Wagner, Fassnacht, Geha, Gilman,
+  et~al.]{simon2019testing}
+Simon, J.~D., Birrer, S., Bechtol, K., Chakrabarti, S., Cyr-Racine, F.-Y.,
+  Dell'Antonio, I., Drlica-Wagner, A., Fassnacht, C., Geha, M., Gilman, D.,
+  et~al.
+\newblock Testing the nature of dark matter with extremely large telescopes.
+\newblock \emph{arXiv preprint arXiv:1903.04742}, 2019.
+
+\bibitem[Tancik et~al.(2020)Tancik, Srinivasan, Mildenhall, Fridovich-Keil,
+  Raghavan, Singhal, Ramamoorthi, Barron, and Ng]{tancik2020fourier}
+Tancik, M., Srinivasan, P., Mildenhall, B., Fridovich-Keil, S., Raghavan, N.,
+  Singhal, U., Ramamoorthi, R., Barron, J., and Ng, R.
+\newblock Fourier features let networks learn high frequency functions in low
+  dimensional domains.
+\newblock \emph{Advances in Neural Information Processing Systems},
+  33:\penalty0 7537--7547, 2020.
+
+\bibitem[Treu(2010)]{treu2010strong}
+Treu, T.
+\newblock Strong lensing by galaxies.
+\newblock \emph{Annual Review of Astronomy and Astrophysics}, 48:\penalty0
+  87--125, 2010.
+
+\bibitem[Ulyanov et~al.(2018)Ulyanov, Vedaldi, and Lempitsky]{ulyanov2018deep}
+Ulyanov, D., Vedaldi, A., and Lempitsky, V.
+\newblock Deep image prior.
+\newblock In \emph{Proceedings of the IEEE conference on computer vision and
+  pattern recognition}, pp.\  9446--9454, 2018.
+
+\bibitem[van~der Walt et~al.(2014)van~der Walt, {S}ch\"onberger,
+  {Nunez-Iglesias}, {B}oulogne, {W}arner, {Y}ager, {G}ouillart, {Y}u, and the
+  scikit-image contributors]{scikit-image}
+van~der Walt, S., {S}ch\"onberger, J.~L., {Nunez-Iglesias}, J., {B}oulogne, F.,
+  {W}arner, J.~D., {Y}ager, N., {G}ouillart, E., {Y}u, T., and the scikit-image
+  contributors.
+\newblock scikit-image: image processing in {P}ython.
+\newblock \emph{PeerJ}, 2:\penalty0 e453, 6 2014.
+\newblock ISSN 2167-8359.
+\newblock \doi{10.7717/peerj.453}.
+\newblock URL \url{https://doi.org/10.7717/peerj.453}.
+
+\bibitem[Vaswani et~al.(2017)Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez,
+  Kaiser, and Polosukhin]{vaswani2017attention}
+Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A.~N.,
+  Kaiser, {\L}., and Polosukhin, I.
+\newblock Attention is all you need.
+\newblock \emph{Advances in neural information processing systems}, 30, 2017.
+
+\bibitem[Vegetti \& Koopmans(2009)Vegetti and Koopmans]{vegetti2009bayesian}
+Vegetti, S. and Koopmans, L.~V.
+\newblock Bayesian strong gravitational-lens modelling on adaptive grids:
+  objective detection of mass substructure in galaxies.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  392\penalty0 (3):\penalty0 945--963, 2009.
+
+\bibitem[Vegetti et~al.(2014)Vegetti, Koopmans, Auger, Treu, and
+  Bolton]{vegetti2014inference}
+Vegetti, S., Koopmans, L., Auger, M., Treu, T., and Bolton, A.
+\newblock Inference of the cold dark matter substructure mass function at
+  $z=0.2$ using strong gravitational lenses.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  442\penalty0 (3):\penalty0 2017--2035, 2014.
+
+\bibitem[Virtanen et~al.(2020)]{2020SciPy-NMeth}
+Virtanen, P. et~al.
+\newblock {{SciPy} 1.0: Fundamental Algorithms for Scientific Computing in
+  Python}.
+\newblock \emph{Nature Methods}, 17:\penalty0 261--272, 2020.
+\newblock \doi{10.1038/s41592-019-0686-2}.
+
+\bibitem[Warren \& Dye(2003)Warren and Dye]{warren2003semilinear}
+Warren, S. and Dye, S.
+\newblock Semilinear gravitational lens inversion.
+\newblock \emph{The Astrophysical Journal}, 590\penalty0 (2):\penalty0 673,
+  2003.
+
+\bibitem[Wuyts et~al.(2012)Wuyts, Rigby, Sharon, and
+  Gladders]{wuyts2012constraints}
+Wuyts, E., Rigby, J.~R., Sharon, K., and Gladders, M.~D.
+\newblock Constraints on the low-mass end of the mass-metallicity relation at
+  $z=1$--2 from lensed galaxies.
+\newblock \emph{The Astrophysical Journal}, 755\penalty0 (1):\penalty0 73,
+  2012.
+
+\bibitem[Yang et~al.(2022)Yang, Ajay, and Agrawal]{yang2022overcoming}
+Yang, G., Ajay, A., and Agrawal, P.
+\newblock Overcoming the spectral bias of neural value approximation.
+\newblock In \emph{International Conference on Learning Representations}, 2022.
+
+\bibitem[Yuan et~al.(2017)Yuan, Richard, Gupta, Federrath, Sharma, Groves,
+  Kewley, Cen, Birnboim, and Fisher]{yuan2017most}
+Yuan, T., Richard, J., Gupta, A., Federrath, C., Sharma, S., Groves, B.~A.,
+  Kewley, L.~J., Cen, R., Birnboim, Y., and Fisher, D.~B.
+\newblock The most ancient spiral galaxy: a 2.6-gyr-old disk with a tranquil
+  velocity field.
+\newblock \emph{The Astrophysical Journal}, 850\penalty0 (1):\penalty0 61,
+  2017.
+
+\bibitem[Zhang et~al.(2021)Zhang, Bengio, Hardt, Recht, and
+  Vinyals]{zhang2021understanding}
+Zhang, C., Bengio, S., Hardt, M., Recht, B., and Vinyals, O.
+\newblock Understanding deep learning (still) requires rethinking
+  generalization.
+\newblock \emph{Communications of the ACM}, 64\penalty0 (3):\penalty0 107--115,
+  2021.
+
+\end{thebibliography}
