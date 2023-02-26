@@ -7,6 +7,7 @@ import gigalens.profile
 
 from jaxinterp2d import CartesianGrid
 
+
 class Interp(gigalens.profile.LightProfile):
     _name = "INTERP"
     _params = ["img", "x_lims", "y_lims"]
